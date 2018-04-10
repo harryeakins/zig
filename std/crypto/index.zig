@@ -24,6 +24,8 @@ pub const HmacMd5 = hmac.HmacMd5;
 pub const HmacSha1 = hmac.Sha1;
 pub const HmacSha256 = hmac.Sha256;
 
+pub const aes = @import("aes");
+
 test "crypto" {
     _ = @import("md5.zig");
     _ = @import("sha1.zig");
@@ -31,4 +33,5 @@ test "crypto" {
     _ = @import("sha3.zig");
     _ = @import("blake2.zig");
     _ = @import("hmac.zig");
+    _ = @import("aes.zig");
 }
